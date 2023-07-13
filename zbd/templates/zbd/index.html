@@ -1,0 +1,53 @@
+{% extends 'zbd/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
+        <div class="col-lg-12">
+          <h1 class="display-5 fw-bold lh-1 my-5">
+            Welcome to the ZBD Paywall Example
+          </h1>
+          <p class="lead">
+            You may reviews urls.py, views.py, and  and templates in the zbd directory to understand the basic integration of a lightning paywall.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
+        <div class="col-lg-12">
+          <!-- Rendering the balance context -->
+          <h3 class="lh-1">Your Project Wallet Balance:</h1>
+          <p class="lead">{{balance}} sats.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Lightning Rules</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">How Lightning is Monetizing Information</h6>
+              <p class="card-text">100 sats</p>
+              <a href="{% url 'buy' %}" class="card-link">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2">
+          <img
+            class="my-3"
+            style="max-width: 200px"
+            src="https://cdn.zebedee.io/an/nostr/poweredbyzbd.png"
+          />
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

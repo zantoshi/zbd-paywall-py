@@ -1,0 +1,1 @@
+from ln_app.wsgi import application

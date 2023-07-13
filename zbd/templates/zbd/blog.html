@@ -1,0 +1,43 @@
+{% extends 'zbd/base.html' %}
+
+{% block content %}
+ <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+                      <a class="btn btn-primary btn-sm" href="{% url 'index'  %}">
+                <i class="bi-back-arrow me-1"></i> Back
+              </a>
+      
+        <h1 class="mb-4">Article Title</h1>
+        
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-4" alt="Article Image">
+        
+        <p class="lead">Written by <strong>Author Name</strong> | Date</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, mauris eu pulvinar maximus, mi nibh vestibulum lectus, vel pretium ipsum est eu nisi. Proin rhoncus posuere lacus, nec auctor quam fermentum at. Aliquam tempor, velit a efficitur euismod, lacus risus tincidunt dui, id tincidunt ligula nunc vel nunc.</p>
+        
+        <p>Curabitur congue sagittis ligula. Quisque volutpat sagittis eros, id eleifend metus efficitur at. Nulla ut eleifend sem. Fusce scelerisque augue in eros tempus, in rhoncus purus hendrerit. Suspendisse nec ipsum id libero bibendum aliquet ac vel sem. Mauris posuere consequat magna vel feugiat.</p>
+        
+        <blockquote class="blockquote">
+          <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo, mauris eu pulvinar maximus, mi nibh vestibulum lectus."</p>
+          <footer class="blockquote-footer">Someone Famous</footer>
+        </blockquote>
+        
+        <p>Nulla facilisi. Nullam sed urna eget turpis eleifend placerat vitae ac eros. Fusce efficitur consequat leo, sit amet lacinia ligula gravida in. Nullam sodales mollis hendrerit. Ut in nisi ac mi consectetur tincidunt. Vestibulum rutrum nulla vel quam efficitur, nec bibendum mauris interdum. Nulla facilisi.</p>
+        
+        <h2 class="mt-4">Subheading</h2>
+        
+        <p>Proin a semper nibh. Suspendisse semper ipsum sed urna rhoncus, non hendrerit turpis eleifend. Vestibulum laoreet, mauris id ullamcorper venenatis, eros orci laoreet ex, ac pellentesque nunc tellus vitae est. Duis et risus lacus. Sed mattis finibus fringilla.</p>
+        
+        <ul>
+          <li>Vestibulum viverra massa eu ligula condimentum, in volutpat orci consectetur.</li>
+          <li>Donec non felis nec elit consectetur fermentum id id metus.</li>
+          <li>Nullam vitae felis ut lorem vulputate pretium.</li>
+        </ul>
+        
+        <p>Pellentesque auctor pharetra dolor, in dapibus lacus hendrerit sed. Nunc a lacus tristique, malesuada purus vel, aliquet leo. Nulla facilisi. Nulla non malesuada tellus.</p>
+        
+      </div>
+    </div>
+  </div>
+{% endblock %}
