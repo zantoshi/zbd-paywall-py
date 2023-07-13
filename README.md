@@ -1,4 +1,4 @@
-# LN App Starter Code
+# ZBD LN Paywall Starter Code
 
 This is a template that can be used to build LN Apps using the ZEBEDEE.io API.
 
